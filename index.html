@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 
-<!-- (BAGIAN 1),(BAGIAN 2),(BAGIAN 3),(BAGIAN 4),(BAGIAN 5),(bagian 6), sedang dibuat (bagian 7) -->
+<!-- (BAGIAN 1),(BAGIAN 2),(BAGIAN 3),(BAGIAN 4),(BAGIAN 5),(BAGIAN 6),(BAGIAN 7), sedang dikerjakan(BAGIAN 8) -->
 
 
   <style>
@@ -29,6 +29,49 @@
 
     .section-bg-custom {
       background-color: #e4efff;
+    }
+    .nav-tabs {
+      --bs-nav-tabs-border-color: #fff;
+      --bs-nav-tabs-link-active-border-color: #fff #fff #000;
+    }
+    .link-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.688rem;
+      margin-bottom: 0.4rem;
+    }
+    .link-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    .icon-quote {
+      font-size: 6em;
+      color: #4f96ff;
+      margin-left: -16px;
+    }
+    .quote {
+      margin-top: -20px;
+      margin-right: 100px;
+      color: #717b8a;
+      font-size: 1.75rem;
+      letter-spacing: .02em;
+      line-height: 2.875rem;
+    }
+    .picture-tab-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: .02em;
+      line-height: 1.688rem;
+      color: #686868;
+    }
+    .picture-tab-desc {
+      font-size: 1rem;
+      letter-spacing: .005em;
+      line-height: 1.5rem;
+      color: #686868;
     }
 
     @media only screen and (max-width: 600px) {
@@ -450,6 +493,76 @@
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore quis exercitationem consequuntur. Voluptas dolores laudantium eius sapiente. Nesciunt, deleniti quae cupiditate facere dolore laudantium nemo, dolorem sunt, recusandae rem eum distinctio assumenda similique maiores totam.</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="row justify-content-center py-5">
+      <div class="col-sm-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+              <div class="row">
+                <div class="col-sm-8">
+                  <i class="bi bi-quote icon-quote"></i>
+                  <div class="quote mb-5">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima, cumque? Tempora delectus illum maiores, in voluptatibus dolorem."
+                  </div>
+                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                </div>
+                <div class="col-sm-4">
+                   <img src="images/ilustrations/person-bounding-box.svg" alt="" class="img-fluid" width="100%">
+                   <p class="picture-tab-title text-center mt-3 mb-1">Lorem, ipsum dolor</p>
+                   <p class="picture-tab-desc text-center">Lorem ipsum dolor sit amet</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+              <div class="row">
+                <div class="col-sm-8">
+                  <i class="bi bi-quote icon-quote"></i>
+                  <div class="quote mb-5">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos architecto inventore a pariatur, fugit repudiandae aspernatur veritatis praesentium."
+                  </div>
+                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                </div>
+                <div class="col-sm-4">
+                   <img src="images/ilustrations/person-bounding-box.svg" alt="" class="img-fluid" width="100%">
+                   <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum dolor sit</p>
+                   <p class="picture-tab-desc text-center">Lorem ipsum dolor</p>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+              <div class="row">
+                <div class="col-sm-8">
+                  <i class="bi bi-quote icon-quote"></i>
+                  <div class="quote mb-5">
+                    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni deserunt unde, mollitia possimus ea ducimus nostrum."
+                  </div>
+                  <button class="btn btn-lg btn-warning text-primary">Button Quote</button>
+                </div>
+                <div class="col-sm-4">
+                   <img src="images/ilustrations/person-bounding-box.svg" alt="" class="img-fluid" width="100%">
+                   <p class="picture-tab-title text-center mt-3 mb-1">Lorem ipsum</p>
+                   <p class="picture-tab-desc text-center">Lorem ipsum dolor sit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav class="mt-5">
+            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">
+                <p class="link-tab-title">Lorem ipsum dolor</p>
+                <p class="link-tab-desc">Lorem ipsum dolor sit amet</p>
+              </button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                <p class="link-tab-title">Lorem ipsum dolor sit</p>
+                <p class="link-tab-desc">Lorem ipsum dolor</p>
+              </button>
+              <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">
+                <p class="link-tab-title">Lorem ipsum</p>
+                <p class="link-tab-desc">Lorem ipsum dolor sit</p>
+              </button>
+            </div>
+        </nav>
       </div>
     </section>
   </main>
